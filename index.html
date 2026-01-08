@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="mainHtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINSH | عالم التشطيبات</title>
+    <!-- خطوط جوجل (Cairo للعربي و Poppins للإنجليزي) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+
+
+    <!-- الهيدر -->
+    <header class="main-header">
+        <div class="container navbar">
+            <div class="logo-area">
+                <img src="images/logo.png" alt="Logo" class="nav-logo"> <!-- صورة اللوجو هنا -->
+                <div class="logo-text">
+                    <h1>FINSH</h1>
+                    <span class="ar-text">عالم التشطيبات</span>
+                </div>
+            </div>
+            <div class="header-actions">
+    
+
+                <!-- زر القائمة -->
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <nav id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#hero" class="active lang-ar">الرئيسية</a><a href="#hero" class="lang-en">Home</a></li>
+                    <li><a href="#about" class="lang-ar">من نحن</a><a href="#about" class="lang-en">About Us</a></li>
+                    <li><a href="#services" class="lang-ar">خدماتنا</a><a href="#services" class="lang-en">Services</a></li>
+                    <li><a href="store.html" class="lang-ar">المتجر</a><a href="store.html" class="lang-en">Store</a></li>
+                    <li><a href="insulation.html" class="lang-ar">العزل </a><a href="insulation.html" class="lang-en">insulation </a>
+                    </li>
+                    <li><a href="finishing.html" class=" lang-ar">تشطيب وترميم</a><a href="finishing.html"
+                            class="active lang-en">Renovation</a></li>
+                    <li><a href="crafts.html" class="lang-ar">سيراميك ودهانات</a><a href="crafts.html"
+                            class="lang-en">Crafts</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<!-- أزرار الأكشن العائمة (اللغة، الواتساب، الاتصال) -->
+<div class="floating-actions">
+    <!-- زر تبديل اللغة العائم -->
+    <div id="langSwitcher" class="float-btn lang-float" title="Change Language / تغيير اللغة">
+        <i class="fas fa-globe"></i>
+    </div>
+
+    <!-- زر الواتساب -->
+    <a href="https://wa.me/966565356905" class="float-btn whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- زر الاتصال -->
+    <a href="tel:0544028428" class="float-btn phone">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+</div>
+    <!-- واجهة الموقع (Hero Section) -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h2 class="lang-ar animate-fade">نحول أحلامك إلى واقع ملموس</h2>
+            <h2 class="lang-en animate-fade">Turning your dreams into reality</h2>
+            <p class="lang-ar">متخصصون في المايكرو اسمنت، السيراميك، والدهانات بأعلى معايير الجودة.</p>
+            <p class="lang-en">Specialists in Micro-cement, Ceramics, and Painting with the highest standards.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-blue lang-ar">اطلب خدمة</a>
+                <a href="#" class="btn btn-blue lang-en">Book a Service</a>
+                <a href="#" class="btn btn-outline lang-ar">تسوق الآن</a>
+                <a href="#" class="btn btn-outline lang-en">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم من نحن - تصميم عصري -->
+    <section id="about" class="about-section section-padding reveal">
+        <div class="container flex-grid">
+            <div class="about-image-wrapper reveal">
+                <img src="images/من نحن.jpeg" alt="Finsh Office" class="main-img">
+                <div class="experience-box">
+                    <span>+15</span>
+                    <p class="lang-ar">سنة خبرة</p>
+                    <p class="lang-en">Years Exp</p>
+                </div>
+            </div>
+            <div class="about-content reveal">
+                <h4 class="sub-title lang-ar">عن الشركة</h4>
+                <h4 class="sub-title lang-en">About Us</h4>
+                <h2 class="lang-ar">من هي <span class="text-blue">FINSH</span>؟</h2>
+                <h2 class="lang-en">Who is <span class="text-blue">FINSH</span>?</h2>
+                <p class="lang-ar">نحن شركة سعودية رائدة في مجال المقاولات والتشطيبات الحديثة، ندمج بين الفن الهندسي
+                    وأحدث التقنيات العالمية لنصنع مساحات تعيش فيها الرفاهية.</p>
+                <p class="lang-en">A leading Saudi company in modern contracting and finishing, blending engineering art
+                    with global technology to create luxury spaces.</p>
+
+                <div class="vision-card">
+                    <div class="vision-text">
+                        <h5 class="lang-ar">شريك في رؤية 2030</h5>
+                        <h5 class="lang-en">2030 Vision Partner</h5>
+                        <p class="lang-ar">نساهم في تطوير القطاع العمراني السعودي بأعلى معايير الجودة العالمية.</p>
+                        <p class="lang-en">Contributing to Saudi urban development with global quality standards.</p>
+                    </div>
+                    <img src="images/2030.webp" alt="2030">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- قسم الخدمات بشكل بطاقات احترافية -->
+    <section id="services" class="services container reveal">
+        <div class="service-card">
+            <div class="card-icon"><i class="fas fa-fill-drip"></i></div>
+            <h3 class="lang-ar">الدهانات والمايكرو اسمنت</h3>
+            <h3 class="lang-en">Painting & Micro-cement</h3>
+            <p class="lang-ar">أرضيات عصرية وحوائط بلمسات فنية مبتكرة.</p>
+            <p class="lang-en">Modern floors and artistic wall touches.</p>
+            <a href="tel:+966500000000" class="btn-action call"><i class="fas fa-phone"></i> اتصل الآن</a>
+        </div>
+        <div class="service-card">
+            <div class="card-icon"><i class="fas fa-layer-group"></i></div>
+            <h3 class="lang-ar">تركيب السيراميك</h3>
+            <h3 class="lang-en">Ceramic Installation</h3>
+            <p class="lang-ar">دقة متناهية في تركيب البورسلين والسيراميك والرخام.</p>
+            <p class="lang-en">Extreme precision in porcelain and ceramic work.</p>
+            <a href="https://wa.me/966500000000" class="btn-action wa"><i class="fab fa-whatsapp"></i> واتساب</a>
+        </div>
+    </section>
+    <!-- قسم المتجر المطور - لملء الفراغ بشكل جذاب -->
+    <section id="store" class="store-teaser section-padding bg-light reveal">
+        <div class="container">
+            <div class="store-content-wrapper flex-grid">
+                <div class="store-info reveal">
+                    <h4 class="sub-title lang-ar">البيع المباشر</h4>
+                    <h4 class="sub-title lang-en">Direct Sale</h4>
+                    <h2 class="lang-ar">تسوق موادنا <span class="text-blue">الاحترافية</span></h2>
+                    <h2 class="lang-en">Shop Our <span class="text-blue">Professional</span> Materials</h2>
+                    <p class="lang-ar">نوفر لك نفس المواد التي نستخدمها في مشاريعنا، مع ضمان الجودة العالية وخدمات
+                        التقسيط عبر تابي وتمارا.</p>
+                    <p class="lang-en">We provide the same high-quality materials we use in our projects, with
+                        installment options via Tabby and Tamara.</p>
+                    <a href="store.html" class="btn btn-blue lang-ar">انتقل للمتجر الكامل</a>
+                    <a href="store.html" class="btn btn-blue lang-en">Go to Full Store</a>
+                </div>
+                <div class="store-featured-cards reveal">
+                    <!-- كارت منتج 1 -->
+                    <div class="teaser-card">
+                        <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=400"
+                            alt="Microcement">
+                        <div class="teaser-info">
+                            <h4 class="lang-ar">مايكرو اسمنت ناعم</h4>
+                            <h4 class="lang-en">Soft Microcement</h4>
+                            <span class="price">450 SAR</span>
+                        </div>
+                    </div>
+                    <!-- كارت منتج 2 -->
+                    <div class="teaser-card">
+                        <img src="images/سيراميك13.jpeg" alt="Ceramic">
+                        <div class="teaser-info">
+                            <h4 class="lang-ar">سيراميك رخامي</h4>
+                            <h4 class="lang-en">Marble Ceramic</h4>
+                            <span class="price">120 SAR/m²</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الإنجازات مع التأثيرات البصرية -->
+    <section id="gallery" class="section-padding reveal">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="lang-ar">إنجازاتنا في <span class="text-blue">التشطيب</span></h2>
+                <h2 class="lang-en">Our <span class="text-blue">Finishing</span> Achievements</h2>
+                <p class="lang-ar">لمحات من مشاريع تم تنفيذها بأعلى معايير الدقة</p>
+            </div>
+            <div class="gallery-grid-pro">
+                <div class="gallery-item reveal">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=600">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="images/من نحن.jpeg">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=600">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=600">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل المطور -->
+    <section id="contact" class="section-padding contact-bg-modern reveal">
+        <div class="container">
+            <div class="contact-card-modern reveal">
+                <div class="contact-sidebar">
+                    <h3 class="lang-ar">معلومات التواصل</h3>
+                    <h3 class="lang-en">Contact Info</h3>
+                    <div class="contact-method">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <p>اتصال هاتفي</p><span>+966 500 000 000</span>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <p>واتساب</p><span>+966 500 000 000</span>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p>البريد الإلكتروني</p><span>info@finsh.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-area">
+                    <h3 class="lang-ar">اطلب عرض سعر الآن</h3>
+                    <h3 class="lang-en">Request a Quote</h3>
+                    <form id="quoteForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>الاسم بالكامل</label>
+                                <input type="text" placeholder="أدخل اسمك هنا.." required>
+                            </div>
+                            <div class="form-group">
+                                <label>رقم الجوال</label>
+                                <input type="tel" placeholder="05xxxxxxxx" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>نوع الخدمة المطلوبة</label>
+                            <select>
+                                <option>مايكرو اسمنت</option>
+                                <option>تركيب سيراميك</option>
+                                <option>دهانات وديكور</option>
+                                <option>تشطيب كامل</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>تفاصيل إضافية</label>
+                            <textarea placeholder="اكتب لنا نبذة عن مشروعك.."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">إرسال الطلب الآن <i
+                                class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- رؤية المملكة 2030 -->
+    <section id="vision" class="vision-section reveal">
+        <div class="container">
+            <h2 class="lang-ar">نساهم في تحقيق رؤية المملكة 2030</h2>
+            <h2 class="lang-en">Contributing to Saudi Vision 2030</h2>
+            <p class="lang-ar">نلتزم بتطوير قطاع التشطيبات بأيدي وطنية وخبرات عالمية لتواكب النهضة العمرانية في المملكة.
+            </p>
+            <p class="lang-en">We are committed to the Saudi urban renaissance through our global expertise.</p>
+        </div>
+    </section>
+
+    <!-- الفوتر مع شعارات الدفع -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="payment-area">
+                <p class="lang-ar">طرق الدفع والتقسيط:</p>
+                <p class="lang-en">Payment & Installment:</p>
+                <div class="payment-badges">
+                    <span class="badge">MADA</span>
+                    <span class="badge tabby">TABBY</span>
+                    <span class="badge tamara">TAMARA</span>
+                    <span class="badge">VISA</span>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FINSH - All Rights Reserved | عالم التشطيبات</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

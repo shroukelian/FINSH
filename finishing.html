@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="mainHtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التشطيب والترميم | FINSH</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <!-- نفس كود الهيدر السابق لضمان الثبات -->
+        <div class="container navbar">
+            <div class="logo-area" onclick="location.href='index.html'" style="cursor:pointer">
+                <img src="images/logo.png" alt="FINSH" class="nav-logo">
+                <div class="logo-text">
+                    <h1>FINSH</h1><span class="ar-text">عالم التشطيبات</span>
+                </div>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="lang-ar">الرئيسية</a><a href="index.html" class="lang-en">Home</a>
+                    </li>
+                    <li><a href="finishing.html" class="active lang-ar">تشطيب وترميم</a><a href="finishing.html"
+                            class="active lang-en">Renovation</a></li>
+                    <li><a href="crafts.html" class="lang-ar">سيراميك ودهانات</a><a href="crafts.html"
+                            class="lang-en">Crafts</a></li>
+                    <li><a href="store.html" class="lang-ar">المتجر</a><a href="store.html" class="lang-en">Store</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="floating-actions">
+    <!-- زر تبديل اللغة العائم -->
+    <div id="langSwitcher" class="float-btn lang-float" title="Change Language / تغيير اللغة">
+        <i class="fas fa-globe"></i>
+    </div>
+
+    <!-- زر الواتساب -->
+    <a href="https://wa.me/966565356905" class="float-btn whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- زر الاتصال -->
+    <a href="tel:0544028428" class="float-btn phone">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+</div>
+
+    <section class="page-hero renovation-hero">
+        <div class="container">
+            <h1 class="lang-ar">التشطيب والترميم الشامل</h1>
+            <h1 class="lang-en">Complete Finishing & Renovation</h1>
+            <p class="lang-ar">من الهيكل الأسود إلى مفتاح القصر</p>
+        </div>
+    </section>
+
+    <!-- قسم النبذة التعريفية -->
+    <section class="section-padding container">
+    <div class="about-service-box reveal mobile-pro-box">
+        <h2 class="lang-ar">حول خدمات <span class="text-blue">الترميم والتشطيب</span></h2>
+        <h2 class="lang-en">About <span class="text-blue">Renovation</span> Services</h2>
+        
+        <p class="intro-p lang-ar">في FINSH، نضمن لك جودة تبدأ من التأسيس حتى اللمسة النهائية:</p>
+        
+        <ul class="service-features lang-ar">
+            <li><i class="fas fa-check-circle"></i> معالجة التصدعات والترميم الإنشائي.</li>
+            <li><i class="fas fa-check-circle"></i> تحديث أنظمة السباكة والكهرباء بالكامل.</li>
+            <li><i class="fas fa-check-circle"></i> تصميم وتنفيذ ديكورات داخلية عصرية.</li>
+            <li><i class="fas fa-check-circle"></i> الالتزام التام بالجودة والجدول الزمني.</li>
+        </ul>
+
+        <!-- النسخة الإنجليزية -->
+        <p class="intro-p lang-en">At FINSH, we guarantee quality from foundation to the final touch:</p>
+        <ul class="service-features lang-en">
+            <li><i class="fas fa-check-circle"></i> Structural repair and crack treatment.</li>
+            <li><i class="fas fa-check-circle"></i> Full plumbing and electrical upgrades.</li>
+            <li><i class="fas fa-check-circle"></i> Modern interior design and execution.</li>
+            <li><i class="fas fa-check-circle"></i> Commitment to quality and schedule.</li>
+        </ul>
+    </div>
+
+        <!-- معرض الصور -->
+        <div class="section-header">
+            <h3 class="lang-ar">معرض مشاريع الترميم</h3>
+            <h3 class="lang-en">Renovation Projects Gallery</h3>
+        </div>
+        <div class="gallery-grid-pro">
+            <!-- ضع صورك هنا -->
+            <div class="gallery-item"><img src="images/ترميم 1.jpeg" alt="Work"></div>
+            <div class="gallery-item"><img src="images/ترميم 2.jpeg" alt="Work"></div>
+            <div class="gallery-item"><img src="images/ترميم 3.jpeg" alt="Work"></div>
+            <div class="gallery-item"><img src="images/ترميم 4.jpeg" alt="Work"></div>
+        </div>
+
+        <!-- أرقام التواصل -->
+        <div class="contact-sticky-box">
+            <p class="lang-ar">طلب تسعيرة أو استشارة فنية:</p>
+            <p class="lang-en">Request a quote or consultation:</p>
+            <div class="contact-btns-row">
+                <a href="tel:0544028428" class="btn-action call"><i class="fas fa-phone"></i> 0544028428</a>
+                <a href="https://wa.me/966565356905" class="btn-action wa"><i class="fab fa-whatsapp"></i> واتساب
+                    الإدارة</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="mainHtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر FINSH | عالم مواد التشطيب</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="store-body">
+
+    <!-- الهيدر -->
+    <header class="main-header">
+        <div class="container navbar">
+            <div class="logo-area" onclick="location.href='index.html'">
+                <img src="images/logo.png" alt="FINSH" class="nav-logo">
+                <div class="logo-text">
+                    <h1>FINSH</h1><span class="ar-text">عالم التشطيبات</span>
+                </div>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="finishing.html">تشطيب وترميم</a></li>
+                    <li><a href="crafts.html">سيراميك ودهانات</a></li>
+                    <li><a href="store.html" class="active">المتجر</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<div class="floating-actions">
+    <!-- زر تبديل اللغة العائم -->
+    <div id="langSwitcher" class="float-btn lang-float" title="Change Language / تغيير اللغة">
+        <i class="fas fa-globe"></i>
+    </div>
+
+    <!-- زر الواتساب -->
+    <a href="https://wa.me/966565356905" class="float-btn whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- زر الاتصال -->
+    <a href="tel:0544028428" class="float-btn phone">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+</div>
+    <!-- واجهة المتجر -->
+    <section class="store-hero">
+        <div class="container">
+            <h1 class="lang-ar">تسوق مواد التشطيب الاحترافية</h1>
+            <h1 class="lang-en">Shop Professional Finishing Materials</h1>
+            <p class="lang-ar">نخبة من مواد المايكرو اسمنت والدهانات بضمان FINSH</p>
+        </div>
+    </section>
+
+    <div class="container store-container">
+        <!-- القائمة الجانبية (الفلاتر) -->
+        <aside class="store-sidebar">
+            <div class="sidebar-box">
+                <h3 class="lang-ar"><i class="fas fa-filter"></i> الأقسام</h3>
+                <h3 class="lang-en"><i class="fas fa-filter"></i> Categories</h3>
+                <ul class="category-list">
+                    <li><a href="#" class="active">الكل / All</a></li>
+                    <li><a href="#">مايكرو اسمنت / Microcement</a></li>
+                    <li><a href="#">دهانات / Paints</a></li>
+                    <li><a href="#">أدوات تركيب / Tools</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-contact">
+                <h4 class="lang-ar">تحتاج مساعدة؟</h4>
+                <a href="tel:0544028428"><i class="fas fa-phone"></i> اتصل بنا</a>
+            </div>
+        </aside>
+
+        <!-- شبكة المنتجات -->
+        <main class="products-main">
+            <div class="products-grid">
+
+                <!-- منتج 1 -->
+                <div class="pro-card reveal">
+                    <div class="pro-img">
+                        <img src="images/اسمنت1.jpeg" alt="Product">
+                        <span class="pro-tag">Best Seller</span>
+                    </div>
+                    <div class="pro-details">
+                        <h3 class="lang-ar">مايكرو اسمنت - ناعم (20kg)</h3>
+                        <h3 class="lang-en">Microcement - Soft (20kg)</h3>
+                        <div class="pro-price">450 SAR</div>
+                        <div class="pro-installments">
+                            <p>أو قسّمها على 4 دفعات مع </p>
+                            <div class="payment-logos">
+                                <img src="images/تابى.webp" alt="Tabby">
+                                <img src="images/تمارا.webp" alt="Tamara">
+                            </div>
+                        </div>
+                        <button class="btn-add-cart"><i class="fas fa-shopping-basket"></i> أضف للسلة</button>
+                    </div>
+                </div>
+
+                <!-- منتج 2 -->
+                <div class="pro-card reveal">
+                    <div class="pro-img">
+                        <img src="images/اسمنت1.jpeg" alt="Product">
+                    </div>
+                    <div class="pro-details">
+                        <h3 class="lang-ar">دهان ديكوري - مطفي</h3>
+                        <h3 class="lang-en">Decorative Paint - Matte</h3>
+                        <div class="pro-price">SAR 280</div>
+                        <!-- زر واحد فقط في النهاية -->
+                        <button class="btn-add-cart"><i class="fas fa-shopping-basket"></i> أضف للسلة</button>
+                    </div>
+                </div>
+
+                <!-- منتج 3 (كرر المنتجات لتعبئة الصفحة) -->
+                <div class="pro-card reveal">
+                    <div class="pro-img">
+                        <img src="images/ادوات الاسمنت.jpg" alt="Product">
+                    </div>
+                    <div class="pro-details">
+                        <h3 class="lang-ar">طقم أدوات المايكرو اسمنت</h3>
+                        <h3 class="lang-en">Microcement Tools Kit</h3>
+                        <div class="pro-price">150 SAR</div>
+                        <button class="btn-add-cart"><i class="fas fa-shopping-basket"></i> أضف للسلة</button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

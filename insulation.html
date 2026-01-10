@@ -10,45 +10,72 @@
 </head>
 
 <body>
-    <header class="main-header">
+   <header class="main-header">
         <div class="container navbar">
-            <div class="logo-area" onclick="location.href='index.html'" style="cursor:pointer">
-                <img src="images/logo.png" alt="FINSH" class="nav-logo">
+            <div class="logo-area">
+                <img src="images/logo.png" alt="Logo" class="nav-logo">
                 <div class="logo-text">
-                    <h1>FINSH</h1><span class="ar-text">عالم التشطيبات</span>
+                    <h1>FINSH</h1>
+                    <span class="ar-text">عالم التشطيبات</span>
                 </div>
             </div>
-            <div class="menu-toggle" id="mobile-menu">
-                <i class="fas fa-bars"></i>
+            <div class="header-actions">
+
+
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
             <nav id="nav-menu">
                 <ul class="nav-links">
                     <li><a href="index.html" class="lang-ar">الرئيسية</a><a href="index.html" class="lang-en">Home</a>
                     </li>
-                    <li><a href="finishing.html" class="lang-ar">تشطيب وترميم</a><a href="finishing.html"
-                            class="lang-en">Renovation</a></li>
-                    <li><a href="crafts.html" class="lang-ar">سيراميك ودهانات</a><a href="crafts.html"
-                            class="lang-en">Crafts</a></li>
-                    <li><a href="insulation.html" class="active lang-ar">خدمات العزل</a><a href="insulation.html"
-                            class="active lang-en">Insulation</a></li>
+
+                    <!-- قائمة الخدمات المنسدلة -->
+                    <li class="dropdown">
+                        <a href="#" class="lang-ar">خدماتنا <i class="fas fa-chevron-down"></i></a>
+                        <a href="#" class="lang-en">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="paints.html" class="lang-ar">الدهانات والديكور</a><a href="paints.html"
+                                    class="lang-en">Paints & Decor</a></li>
+                            <li><a href="crafts.html" class="lang-ar">المايكرو اسمنت</a><a href="microcement.html"
+                                    class="lang-en">Microcement</a></li>
+                            <li><a href="ceramics.html" class="lang-ar">السيراميك والبورسلين</a><a href="ceramics.html"
+                                    class="lang-en">Ceramics</a></li>
+                            <li><a href="gypsum.html" class="lang-ar">جبس بورد وديكورات</a><a href="gypsum.html"
+                                    class="lang-en">Gypsum Board</a></li>
+                            <li><a href="plumbing-electrical.html" class="lang-ar">سباكة وكهرباء</a><a
+                                    href="plumbing-electrical.html" class="lang-en">Plumbing & Elec</a></li>
+                            <li><a href="insulation.html" class="lang-ar">خدمات العزل</a><a href="insulation.html"
+                                    class="lang-en">Insulation</a></li>
+       <li>
+                                <a href="marble-alt.html">
+                                    <span class="lang-ar">بديل الرخام والخشب</span>
+                                    <span class="lang-en">Marble & Wood Alt</span>
+                                </a>
+                            </li>
+                            <li><a href="finishing.html" class="lang-ar">ترميم ومقاولات</a><a href="finishing.html"
+                                    class="lang-en">Renovation</a></li>
+                        </ul>
+                    </li>
+
                     <li><a href="store.html" class="lang-ar">المتجر</a><a href="store.html" class="lang-en">Store</a>
+                    </li>
+                    <li><a href="about.html" class="lang-ar">من نحن</a><a href="about.html" class="lang-en">About Us</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
 <div class="floating-actions">
-    <!-- زر تبديل اللغة العائم -->
     <div id="langSwitcher" class="float-btn lang-float" title="Change Language / تغيير اللغة">
         <i class="fas fa-globe"></i>
     </div>
 
-    <!-- زر الواتساب -->
     <a href="https://wa.me/966565356905" class="float-btn whatsapp" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- زر الاتصال -->
     <a href="tel:0544028428" class="float-btn phone">
         <i class="fas fa-phone-alt"></i>
     </a>
@@ -63,7 +90,6 @@
 
     <section class="section-padding container">
 
-        <!-- مقدمة عن أهمية العزل -->
         <div class="about-service-box reveal">
             <h2 class="lang-ar">لماذا تحتاج لخدمات <span class="text-blue">العزل</span> من FINSH؟</h2>
             <h2 class="lang-en">Why do you need <span class="text-blue">Insulation</span> from FINSH?</h2>
@@ -74,7 +100,6 @@
             </p>
         </div>
 
-        <!-- 1. العزل المائي -->
         <div class="craft-detailed-section reveal">
             <div class="craft-info">
                 <h2 class="lang-ar">1. العزل المائي (الأسطح والحمامات)</h2>
@@ -94,7 +119,6 @@
             </div>
         </div>
 
-        <!-- 2. عزل الخزانات -->
         <div class="craft-detailed-section reveal" style="margin-top: 80px;">
             <div class="craft-info">
                 <h2 class="lang-ar">2. عزل خزانات المياه</h2>
@@ -117,7 +141,6 @@
             </div>
         </div>
 
-        <!-- 3. العزل الحراري -->
         <div class="craft-detailed-section reveal" style="margin-top: 80px;">
             <div class="craft-info">
                 <h2 class="lang-ar">3. العزل الحراري (الفوم والبولسترين)</h2>
@@ -141,7 +164,6 @@
 
     </section>
 
-    <!-- الفوتر -->
     <footer class="main-footer">
         <div class="container text-center">
             <p>&copy; 2026 FINSH - All Rights Reserved | عالم التشطيبات</p>

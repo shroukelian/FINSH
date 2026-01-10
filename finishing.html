@@ -11,47 +11,76 @@
 
 <body>
     <header class="main-header">
-        <!-- نفس كود الهيدر السابق لضمان الثبات -->
         <div class="container navbar">
-            <div class="logo-area" onclick="location.href='index.html'" style="cursor:pointer">
-                <img src="images/logo.png" alt="FINSH" class="nav-logo">
+            <div class="logo-area">
+                <img src="images/logo.png" alt="Logo" class="nav-logo">
                 <div class="logo-text">
-                    <h1>FINSH</h1><span class="ar-text">عالم التشطيبات</span>
+                    <h1>FINSH</h1>
+                    <span class="ar-text">عالم التشطيبات</span>
                 </div>
             </div>
-            <div class="menu-toggle" id="mobile-menu">
-                <i class="fas fa-bars"></i>
+            <div class="header-actions">
+
+
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
             <nav id="nav-menu">
                 <ul class="nav-links">
                     <li><a href="index.html" class="lang-ar">الرئيسية</a><a href="index.html" class="lang-en">Home</a>
                     </li>
-                    <li><a href="finishing.html" class="active lang-ar">تشطيب وترميم</a><a href="finishing.html"
-                            class="active lang-en">Renovation</a></li>
-                    <li><a href="crafts.html" class="lang-ar">سيراميك ودهانات</a><a href="crafts.html"
-                            class="lang-en">Crafts</a></li>
+
+                    <!-- قائمة الخدمات المنسدلة -->
+                    <li class="dropdown">
+                        <a href="#" class="lang-ar">خدماتنا <i class="fas fa-chevron-down"></i></a>
+                        <a href="#" class="lang-en">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="paints.html" class="lang-ar">الدهانات والديكور</a><a href="paints.html"
+                                    class="lang-en">Paints & Decor</a></li>
+                            <li><a href="crafts.html" class="lang-ar">المايكرو اسمنت</a><a href="microcement.html"
+                                    class="lang-en">Microcement</a></li>
+                            <li><a href="ceramics.html" class="lang-ar">السيراميك والبورسلين</a><a href="ceramics.html"
+                                    class="lang-en">Ceramics</a></li>
+                            <li><a href="gypsum.html" class="lang-ar">جبس بورد وديكورات</a><a href="gypsum.html"
+                                    class="lang-en">Gypsum Board</a></li>
+                            <li><a href="plumbing-electrical.html" class="lang-ar">سباكة وكهرباء</a><a
+                                    href="plumbing-electrical.html" class="lang-en">Plumbing & Elec</a></li>
+                            <li><a href="insulation.html" class="lang-ar">خدمات العزل</a><a href="insulation.html"
+                                    class="lang-en">Insulation</a></li>
+                            <li>
+                                <a href="marble-alt.html">
+                                    <span class="lang-ar">بديل الرخام والخشب</span>
+                                    <span class="lang-en">Marble & Wood Alt</span>
+                                </a>
+                            </li>
+                            <li><a href="finishing.html" class="lang-ar">ترميم ومقاولات</a><a href="finishing.html"
+                                    class="lang-en">Renovation</a></li>
+                        </ul>
+                    </li>
+
                     <li><a href="store.html" class="lang-ar">المتجر</a><a href="store.html" class="lang-en">Store</a>
+                    </li>
+                    <li><a href="index.html#about" class="lang-ar">من نحن</a><a href="about.html" class="lang-en">About
+                            Us</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
     <div class="floating-actions">
-    <!-- زر تبديل اللغة العائم -->
-    <div id="langSwitcher" class="float-btn lang-float" title="Change Language / تغيير اللغة">
-        <i class="fas fa-globe"></i>
+        <div id="langSwitcher" class="float-btn lang-float" title="Change Language / تغيير اللغة">
+            <i class="fas fa-globe"></i>
+        </div>
+
+        <a href="https://wa.me/966565356905" class="float-btn whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <a href="tel:0544028428" class="float-btn phone">
+            <i class="fas fa-phone-alt"></i>
+        </a>
     </div>
-
-    <!-- زر الواتساب -->
-    <a href="https://wa.me/966565356905" class="float-btn whatsapp" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <!-- زر الاتصال -->
-    <a href="tel:0544028428" class="float-btn phone">
-        <i class="fas fa-phone-alt"></i>
-    </a>
-</div>
 
     <section class="page-hero renovation-hero">
         <div class="container">
@@ -61,45 +90,40 @@
         </div>
     </section>
 
-    <!-- قسم النبذة التعريفية -->
     <section class="section-padding container">
-    <div class="about-service-box reveal mobile-pro-box">
-        <h2 class="lang-ar">حول خدمات <span class="text-blue">الترميم والتشطيب</span></h2>
-        <h2 class="lang-en">About <span class="text-blue">Renovation</span> Services</h2>
-        
-        <p class="intro-p lang-ar">في FINSH، نضمن لك جودة تبدأ من التأسيس حتى اللمسة النهائية:</p>
-        
-        <ul class="service-features lang-ar">
-            <li><i class="fas fa-check-circle"></i> معالجة التصدعات والترميم الإنشائي.</li>
-            <li><i class="fas fa-check-circle"></i> تحديث أنظمة السباكة والكهرباء بالكامل.</li>
-            <li><i class="fas fa-check-circle"></i> تصميم وتنفيذ ديكورات داخلية عصرية.</li>
-            <li><i class="fas fa-check-circle"></i> الالتزام التام بالجودة والجدول الزمني.</li>
-        </ul>
+        <div class="about-service-box reveal mobile-pro-box">
+            <h2 class="lang-ar">حول خدمات <span class="text-blue">الترميم والتشطيب</span></h2>
+            <h2 class="lang-en">About <span class="text-blue">Renovation</span> Services</h2>
 
-        <!-- النسخة الإنجليزية -->
-        <p class="intro-p lang-en">At FINSH, we guarantee quality from foundation to the final touch:</p>
-        <ul class="service-features lang-en">
-            <li><i class="fas fa-check-circle"></i> Structural repair and crack treatment.</li>
-            <li><i class="fas fa-check-circle"></i> Full plumbing and electrical upgrades.</li>
-            <li><i class="fas fa-check-circle"></i> Modern interior design and execution.</li>
-            <li><i class="fas fa-check-circle"></i> Commitment to quality and schedule.</li>
-        </ul>
-    </div>
+            <p class="intro-p lang-ar">في FINSH، نضمن لك جودة تبدأ من التأسيس حتى اللمسة النهائية:</p>
 
-        <!-- معرض الصور -->
+            <ul class="service-features lang-ar">
+                <li><i class="fas fa-check-circle"></i> معالجة التصدعات والترميم الإنشائي.</li>
+                <li><i class="fas fa-check-circle"></i> تحديث أنظمة السباكة والكهرباء بالكامل.</li>
+                <li><i class="fas fa-check-circle"></i> تصميم وتنفيذ ديكورات داخلية عصرية.</li>
+                <li><i class="fas fa-check-circle"></i> الالتزام التام بالجودة والجدول الزمني.</li>
+            </ul>
+
+            <p class="intro-p lang-en">At FINSH, we guarantee quality from foundation to the final touch:</p>
+            <ul class="service-features lang-en">
+                <li><i class="fas fa-check-circle"></i> Structural repair and crack treatment.</li>
+                <li><i class="fas fa-check-circle"></i> Full plumbing and electrical upgrades.</li>
+                <li><i class="fas fa-check-circle"></i> Modern interior design and execution.</li>
+                <li><i class="fas fa-check-circle"></i> Commitment to quality and schedule.</li>
+            </ul>
+        </div>
+
         <div class="section-header">
             <h3 class="lang-ar">معرض مشاريع الترميم</h3>
             <h3 class="lang-en">Renovation Projects Gallery</h3>
         </div>
         <div class="gallery-grid-pro">
-            <!-- ضع صورك هنا -->
             <div class="gallery-item"><img src="images/ترميم 1.jpeg" alt="Work"></div>
             <div class="gallery-item"><img src="images/ترميم 2.jpeg" alt="Work"></div>
             <div class="gallery-item"><img src="images/ترميم 3.jpeg" alt="Work"></div>
             <div class="gallery-item"><img src="images/ترميم 4.jpeg" alt="Work"></div>
         </div>
 
-        <!-- أرقام التواصل -->
         <div class="contact-sticky-box">
             <p class="lang-ar">طلب تسعيرة أو استشارة فنية:</p>
             <p class="lang-en">Request a quote or consultation:</p>

@@ -1638,3 +1638,74 @@ html, body {
     from { opacity: 0; transform: translateY(-30px); }
     to { opacity: 1; transform: translateY(0); }
 }
+/* --- تنسيق القائمة المنسدلة (Dropdown) --- */
+.nav-links li { position: relative; }
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    width: 220px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 10px 0;
+    display: none; /* مخفية */
+    list-style: none;
+    z-index: 2000;
+}
+.dropdown:hover .dropdown-menu { display: block; }
+.dropdown-menu li a {
+    padding: 10px 20px;
+    display: block;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #f9f9f9;
+}
+.dropdown-menu li a:hover { background: #f0f7ff; color: var(--primary-blue); }
+
+/* --- تنسيق شبكة الخدمات في الرئيسية --- */
+.services-overview-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+.s-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    border: 1px solid #eee;
+}
+.s-card:hover { transform: translateY(-10px); border-color: var(--primary-blue); }
+.s-icon { font-size: 40px; color: var(--primary-blue); margin-bottom: 20px; }
+.s-card h3 { font-size: 18px; margin-bottom: 15px; }
+.read-more { text-decoration: none; color: var(--primary-blue); font-weight: bold; font-size: 14px; }
+
+/* الموبايل */
+@media (max-width: 768px) {
+    .services-overview-grid { grid-template-columns: 1fr; }
+    .dropdown-menu { position: static; width: 100%; box-shadow: none; display: block; padding-right: 20px; }
+}
+/* تنسيق الاسم القانوني في الهيدر */
+.legal-name {
+    display: block;
+    font-size: 11px; /* خط صغير ورسمي */
+    color: #666;
+    margin-top: 2px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+/* تنسيق الفوتر القانوني */
+.legal-footer {
+    border-top: 1px solid #222;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.legal-footer strong {
+    color: var(--primary-blue);
+}

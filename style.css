@@ -1717,3 +1717,23 @@ html, body {
 .legal-footer strong {
     color: var(--primary-blue);
 }
+/* تنسيق روابط التواصل في الجانب الأزرق */
+.contact-link-wrapper {
+    text-decoration: none; /* حذف الخط اللي تحت الرابط */
+    color: inherit; /* جعل الرابط يأخذ نفس لون النص الأبيض */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.contact-link-wrapper:hover {
+    transform: translateX(-5px); /* حركة بسيطة عند الوقوف بالماوس */
+}
+
+/* في حالة اللغة الإنجليزية نعكس الحركة */
+[lang="en"] .contact-link-wrapper:hover {
+    transform: translateX(5px);
+}
+
+.contact-method {
+    cursor: pointer; /* جعل الماوس يتحول ليد عند الوقوف */
+}

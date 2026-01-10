@@ -12,8 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // حفظ اللغة في المتصفح
         localStorage.setItem('userLang', lang);
-
-        // ملاحظة: لم نضع تغيير نص (textContent) هنا لنحافظ على أيقونة الكرة الأرضية
     }
 
     if (langBtn) {
@@ -71,9 +69,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    // --- 3. أنيميشن السكرول المتكرر (Scroll Observer) ---
+    // --- 3. أنيميشن السكرول المتكرر (Scroll Observer) المحسن ---
     const observerOptions = {
-        threshold: 0.1 // يبدأ الأنيميشن بمجرد ظهور 10% من العنصر
+        threshold: 0.05, // جعلناه 5% ليكون حساساً جداً للعناصر الموجودة في أعلى الصفحة
+        rootMargin: "0px 0px -50px 0px" // تشغيل الأنيميشن قبل وصول العنصر بقليل
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -82,16 +81,29 @@ document.addEventListener('DOMContentLoaded', () => {
                 // إضافة الكلاس عند دخول العنصر للشاشة
                 entry.target.classList.add('active');
             } else {
-                // حذف الكلاس عند خروجه لتكرار الأنيميشن
+                // حذف الكلاس عند خروجه لتكرار الأنيميشن كل مرة
                 entry.target.classList.remove('active');
             }
         });
     }, observerOptions);
 
     // مراقبة كل العناصر التي تحتاج أنيميشن
-    const revealElements = document.querySelectorAll('.reveal, .gallery-item, .service-card, .teaser-card, .pro-card');
+    // أضفنا .about-service-box لضمان عمله في صفحات الخدمات
+    const revealElements = document.querySelectorAll('.reveal, .gallery-item, .service-card, .teaser-card, .pro-card, .about-service-box');
+    
     revealElements.forEach(el => {
         observer.observe(el);
     });
+
+    // كود إضافي: تشغيل فحص يدوي فوراً بعد التحميل بـ 100 ملي ثانية
+    // لضمان أن الصور والنصوص في أول الصفحة تظهر بحركتها فوراً
+    setTimeout(() => {
+        revealElements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight) {
+                el.classList.add('active');
+            }
+        });
+    }, 100);
 
 });

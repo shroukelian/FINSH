@@ -11,117 +11,120 @@
 
 <body>
     <!-- الهيدر الموحد مع القائمة المنسدلة -->
-   <header class="main-header">
-    <div class="container navbar">
-        <!-- اللوجو والاسم -->
-        <div class="logo-area" onclick="location.href='index.html'" style="cursor:pointer">
-            <img src="images/logo.png" alt="FINSH" class="nav-logo">
-            <div class="logo-text">
-                <h1>FINSH</h1>
-                <span class="ar-text lang-ar">عالم التشطيبات</span>
-                <span class="ar-text lang-en">Finishing World</span>
+    <header class="main-header">
+        <div class="container navbar">
+            <!-- اللوجو والاسم -->
+            <div class="logo-area" onclick="location.href='index.html'" style="cursor:pointer">
+                <img src="images/logo.png" alt="FINSH" class="nav-logo">
+                <div class="logo-text">
+                    <h1>FINSH</h1>
+                    <span class="ar-text lang-ar">عالم التشطيبات</span>
+                    <span class="ar-text lang-en">Finishing World</span>
+                </div>
+            </div>
+
+            <!-- القائمة الرئيسية -->
+            <nav id="nav-menu">
+                <ul class="nav-links">
+                    <!-- الرئيسية -->
+                    <li>
+                        <a href="index.html">
+                            <span class="lang-ar">الرئيسية</span>
+                            <span class="lang-en">Home</span>
+                        </a>
+                    </li>
+
+                    <!-- قائمة الخدمات المنسدلة مترجمة -->
+                    <li class="dropdown">
+                        <a href="#">
+                            <span class="lang-ar">خدماتنا <i class="fas fa-chevron-down"></i></span>
+                            <span class="lang-en">Services <i class="fas fa-chevron-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="paints.html">
+                                    <span class="lang-ar">الدهانات والديكور</span>
+                                    <span class="lang-en">Paints & Decor</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="crafts.html">
+                                    <span class="lang-ar">المايكرو اسمنت</span>
+                                    <span class="lang-en">Microcement</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ceramics.html">
+                                    <span class="lang-ar">السيراميك والبورسلين</span>
+                                    <span class="lang-en">Ceramics & Porcelain</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="marble-alt.html">
+                                    <span class="lang-ar">بديل الرخام والخشب</span>
+                                    <span class="lang-en">Marble & Wood Alt</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="gypsum.html">
+                                    <span class="lang-ar">جبس بورد وديكورات</span>
+                                    <span class="lang-en">Gypsum Board</span>
+                                </a>
+                            </li>
+                            <li><a href="plastering.html"><span class="lang-ar">اللياسة والمقاولات</span><span
+                                        class="lang-en">Plastering</span></a></li>
+                            <li>
+                                <a href="plumbing-electrical.html">
+                                    <span class="lang-ar">سباكة وكهرباء</span>
+                                    <span class="lang-en">Plumbing & Electrical</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="insulation.html">
+                                    <span class="lang-ar">خدمات العزل</span>
+                                    <span class="lang-en">Insulation Services</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="finishing.html">
+                                    <span class="lang-ar">ترميم ومقاولات</span>
+                                    <span class="lang-en">Renovation</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- المتجر -->
+                    <li>
+                        <a href="store.html">
+                            <span class="lang-ar">المتجر</span>
+                            <span class="lang-en">Store</span>
+                        </a>
+                    </li>
+
+                    <!-- من نحن -->
+                    <li>
+                        <a href="index.html#about">
+                            <span class="lang-ar">من نحن</span>
+                            <span class="lang-en">About Us</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- أدوات الهيدر (اللغة والقائمة) -->
+            <div class="header-actions">
+                <!-- زر الموبايل (Hamburger) -->
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </div>
-
-        <!-- القائمة الرئيسية -->
-        <nav id="nav-menu">
-            <ul class="nav-links">
-                <!-- الرئيسية -->
-                <li>
-                    <a href="index.html">
-                        <span class="lang-ar">الرئيسية</span>
-                        <span class="lang-en">Home</span>
-                    </a>
-                </li>
-
-                <!-- قائمة الخدمات المنسدلة مترجمة -->
-                <li class="dropdown">
-                    <a href="#">
-                        <span class="lang-ar">خدماتنا <i class="fas fa-chevron-down"></i></span>
-                        <span class="lang-en">Services <i class="fas fa-chevron-down"></i></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="paints.html">
-                                <span class="lang-ar">الدهانات والديكور</span>
-                                <span class="lang-en">Paints & Decor</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="crafts.html">
-                                <span class="lang-ar">المايكرو اسمنت</span>
-                                <span class="lang-en">Microcement</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="ceramics.html">
-                                <span class="lang-ar">السيراميك والبورسلين</span>
-                                <span class="lang-en">Ceramics & Porcelain</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="marble-alt.html">
-                                <span class="lang-ar">بديل الرخام والخشب</span>
-                                <span class="lang-en">Marble & Wood Alt</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="gypsum.html">
-                                <span class="lang-ar">جبس بورد وديكورات</span>
-                                <span class="lang-en">Gypsum Board</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="plumbing-electrical.html">
-                                <span class="lang-ar">سباكة وكهرباء</span>
-                                <span class="lang-en">Plumbing & Electrical</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="insulation.html">
-                                <span class="lang-ar">خدمات العزل</span>
-                                <span class="lang-en">Insulation Services</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="finishing.html">
-                                <span class="lang-ar">ترميم ومقاولات</span>
-                                <span class="lang-en">Renovation</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <!-- المتجر -->
-                <li>
-                    <a href="store.html">
-                        <span class="lang-ar">المتجر</span>
-                        <span class="lang-en">Store</span>
-                    </a>
-                </li>
-
-                <!-- من نحن -->
-                <li>
-                    <a href="index.html#about">
-                        <span class="lang-ar">من نحن</span>
-                        <span class="lang-en">About Us</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- أدوات الهيدر (اللغة والقائمة) -->
-        <div class="header-actions">
-                     <!-- زر الموبايل (Hamburger) -->
-            <div class="menu-toggle" id="mobile-menu">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </div>
-</header>
+    </header>
 
     <!-- واجهة الصفحة -->
-    <section class="page-hero" style="background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1615873968403-89e068629275?q=80&w=1600') center/cover;">
+    <section class="page-hero"
+        style="background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1615873968403-89e068629275?q=80&w=1600') center/cover;">
         <div class="container">
             <h1 class="lang-ar">أعمال الجبس بورد والديكور</h1>
             <h1 class="lang-en">Gypsum Board & Decorations</h1>
@@ -135,14 +138,17 @@
         <div class="about-service-box reveal mobile-pro-box">
             <h2 class="lang-ar">ديكورات جبسية <span class="text-blue">عصرية</span></h2>
             <h2 class="lang-en">Modern <span class="text-blue">Gypsum</span> Designs</h2>
-            
+
             <p class="lang-ar">
-                نحن متخصصون في تنفيذ أرقى ديكورات الجبس بورد للأسقف والجدران، مع مراعاة التوزيع الهندسي للإضاءة المخفية والـ Spotlights. نستخدم أفضل المواد المقاومة للرطوبة والحرارة لضمان استدامة الديكور وجمالية المظهر.
+                نحن متخصصون في تنفيذ أرقى ديكورات الجبس بورد للأسقف والجدران، مع مراعاة التوزيع الهندسي للإضاءة المخفية
+                والـ Spotlights. نستخدم أفضل المواد المقاومة للرطوبة والحرارة لضمان استدامة الديكور وجمالية المظهر.
             </p>
             <p class="lang-en">
-                We specialize in executing the finest gypsum board decorations for ceilings and walls, considering the engineering distribution of hidden lighting. We use the best moisture and heat resistant materials to ensure durability.
+                We specialize in executing the finest gypsum board decorations for ceilings and walls, considering the
+                engineering distribution of hidden lighting. We use the best moisture and heat resistant materials to
+                ensure durability.
             </p>
-            
+
             <ul class="service-features lang-ar">
                 <li><i class="fas fa-check-circle"></i> أسقف مستعارة بتصاميم كلاسيك ومودرن.</li>
                 <li><i class="fas fa-check-circle"></i> قواطع جدارية ومكتبات جبسية شاشات البلازما.</li>
@@ -156,7 +162,8 @@
 
             <div class="contact-btns-row" style="margin-top:20px;">
                 <a href="tel:0544028428" class="btn-action call"><i class="fas fa-phone"></i> 0544028428</a>
-                <a href="https://wa.me/966544028428" class="btn-action wa"><i class="fab fa-whatsapp"></i> واتساب الإدارة</a>
+                <a href="https://wa.me/966544028428" class="btn-action wa"><i class="fab fa-whatsapp"></i> واتساب
+                    الإدارة</a>
             </div>
         </div>
 
@@ -183,7 +190,7 @@
         </div>
     </footer>
 
-  <div class="floating-actions">
+    <div class="floating-actions">
         <div id="langSwitcher" class="float-btn lang-float" title="Change Language / تغيير اللغة">
             <i class="fas fa-globe"></i>
         </div>

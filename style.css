@@ -1,4 +1,3 @@
-/* الإعدادات العامة */
 :root {
     --primary-blue: #0076ff;
     --secondary-blue: #0056b3;
@@ -29,7 +28,6 @@ body {
     align-items: center;
 }
 
-/* تبديل اللغات */
 [lang="en"] .lang-ar {
     display: none;
 }
@@ -290,7 +288,6 @@ position: fixed !important;
     color: #666;
 }
 
-/* تحسينات التصميم الجديد */
 
 .text-blue {
     color: var(--primary-blue);
@@ -464,7 +461,6 @@ position: fixed !important;
     }
 }
 
-/* --- تحسينات المتجر لملء الفراغ --- */
 .store-content-wrapper {
     display: flex;
     align-items: center;
@@ -517,7 +513,6 @@ position: fixed !important;
     margin-top: 10px;
 }
 
-/* --- تأثيرات معرض الصور الاحترافية --- */
 .gallery-grid-pro {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -547,7 +542,6 @@ position: fixed !important;
     width: 100%;
     height: 100%;
     background: rgba(0, 118, 255, 0.7);
-    /* لون اللوجو الأزرق بشفافية */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -575,7 +569,6 @@ position: fixed !important;
     transform: scale(1);
 }
 
-/* --- تصميم فورم تواصل معنا المودرن --- */
 .contact-bg-modern {
     background: #f0f4f8;
 }
@@ -708,7 +701,6 @@ position: fixed !important;
     }
 }
 
-/* تنسيقات إضافية للصفحات */
 .page-hero {
     height: 300px;
     background: var(--dark-bg);
@@ -734,7 +726,6 @@ position: fixed !important;
     border-radius: 30px;
 }
 
-/* بلوك التواصل داخل الصفحات */
 .contact-box-inner {
     margin-top: 30px;
     padding: 20px;
@@ -789,7 +780,6 @@ position: fixed !important;
     text-align: center;
 }
 
-/* أزرار تابي وتمارا في المتجر */
 .payment-options img {
     filter: grayscale(0);
     transition: 0.3s;
@@ -799,7 +789,6 @@ position: fixed !important;
     filter: brightness(1.1);
 }
 
-/* تحسين كثافة المحتوى */
 .about-service-box {
     background: #fff;
     padding: 50px;
@@ -815,7 +804,6 @@ position: fixed !important;
     margin-bottom: 20px;
 }
 
-/* صندوق التواصل الثابت أسفل الصفحة */
 .contact-sticky-box {
     margin-top: 60px;
     background: var(--dark-bg);
@@ -852,7 +840,6 @@ position: fixed !important;
     color: #fff;
 }
 
-/* تنسيق الحرف التخصصية */
 .craft-detailed-section {
     border-top: 1px solid #eee;
     padding-top: 40px;
@@ -873,7 +860,6 @@ position: fixed !important;
     border-radius: 8px;
 }
 
-/* تحسين الجاليري */
 .gallery-grid-pro {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -911,7 +897,6 @@ position: fixed !important;
     }
 }
 
-/* --- إعدادات صفحة المتجر --- */
 .store-body {
     background: #f4f7f6;
 }
@@ -1090,7 +1075,6 @@ position: fixed !important;
     background: var(--primary-blue);
 }
 
-/* التجاوب للموبايل */
 @media (max-width: 992px) {
     .store-container {
         flex-direction: column;
@@ -1112,15 +1096,11 @@ position: fixed !important;
     background-size: cover;
 }
 
-/* تحسين شكل الـ Active link في الموبايل والكمبيوتر ليكون واضح */
 .nav-links a.active {
     color: var(--primary-blue) !important;
     border-bottom: 2px solid var(--primary-blue);
 }
 
-/* --- تحسينات الموبايل والقائمة --- */
-
-/* إخفاء زر القائمة في الشاشات الكبيرة */
 .menu-toggle {
     display: none;
     font-size: 24px;
@@ -1130,7 +1110,6 @@ position: fixed !important;
 
 @media (max-width: 992px) {
 
-    /* شريط الاتصال العلوي في الموبايل */
     .top-bar .container {
         flex-direction: column;
         gap: 10px;
@@ -1157,12 +1136,10 @@ position: fixed !important;
         order: 3;
     }
 
-    /* تحويل القائمة الجانبية */
     nav {
         position: fixed;
         top: 0;
         right: -100%;
-        /* مخفية خارج الشاشة */
         width: 70%;
         height: 100vh;
         background: #fff;
@@ -1174,10 +1151,7 @@ position: fixed !important;
 
     nav.active {
         right: 0;
-        /* تظهر عند الضغط */
     }
-
-    /* تغيير اتجاه القائمة في حالة اللغة الإنجليزية */
     [lang="en"] nav {
         right: auto;
         left: -100%;
@@ -1198,7 +1172,6 @@ position: fixed !important;
         color: #333;
     }
 
-    /* إصلاح الهيرو (Hero) في الموبايل */
     .hero-content h2 {
         font-size: 24px !important;
     }
@@ -1207,7 +1180,6 @@ position: fixed !important;
         font-size: 14px;
     }
 
-    /* إصلاح أقسام الخدمات */
     .flex-grid {
         flex-direction: column !important;
         gap: 30px;
@@ -1221,30 +1193,26 @@ position: fixed !important;
         flex-direction: column;
     }
 
-    /* الصور في الموبايل */
     .gallery-grid-pro,
     .product-grid {
         grid-template-columns: 1fr !important;
     }
 }
-/* --- ضبط الموبايل المطور --- */
 @media (max-width: 768px) {
     
-    /* 1. ضبط قسم الخدمات (الكروت) */
     .services.container {
-        flex-direction: column !important; /* ترتيب رأسي */
+        flex-direction: column !important;
         padding: 40px 15px;
         gap: 20px;
     }
 
     .service-card {
-        width: 100%; /* الكارت يأخذ العرض كامل */
+        width: 100%; 
         padding: 30px 20px;
     }
 
-    /* 2. ضبط كارت التواصل (المنطقة الزرقاء والبيضاء) */
     .contact-card-modern {
-        flex-direction: column !important; /* المنطقة الزرقاء فوق البيضاء */
+        flex-direction: column !important; 
         border-radius: 25px;
         margin: 0 10px;
         overflow: hidden;
@@ -1252,13 +1220,13 @@ position: fixed !important;
 
     .contact-sidebar {
         padding: 40px 20px !important;
-        border-radius: 0; /* إلغاء الحواف الجانبية لأنها أصبحت في الأعلى */
+        border-radius: 0; 
         text-align: center;
     }
 
     .contact-method {
-        justify-content: center; /* توسيط أيقونات التواصل */
-        text-align: right; /* الحفاظ على محاذاة النص العربي */
+        justify-content: center; 
+        text-align: right;
         margin-top: 20px;
     }
 
@@ -1272,9 +1240,8 @@ position: fixed !important;
         padding: 30px 20px !important;
     }
 
-    /* 3. ضبط الفورم (المدخلات) */
     .form-row {
-        flex-direction: column !important; /* الاسم والجوال تحت بعض */
+        flex-direction: column !important; 
         gap: 0;
     }
 
@@ -1289,13 +1256,11 @@ position: fixed !important;
         margin-bottom: 25px;
     }
 
-    /* 4. ضبط قسم المتجر (المصغرات) */
     .product-teaser-grid {
-        grid-template-columns: 1fr !important; /* منتج واحد في السطر */
+        grid-template-columns: 1fr !important; 
         gap: 20px;
     }
 
-    /* 5. ضبط الهيدر واللوجو */
     .logo-area {
         gap: 8px;
     }
@@ -1308,16 +1273,12 @@ position: fixed !important;
         font-size: 22px;
     }
 
-    /* شريط التوب بار (العناوين) */
     .top-bar .container {
         flex-direction: column;
         padding: 10px;
         gap: 8px;
     }
 }
-/* --- حل مشكلة الفراغ الجانبي وكل عنصر في صف --- */
-
-/* 1. منع خروج أي عنصر عن عرض الشاشة (حل الفراغ الأبيض) */
 html, body {
     overflow-x: hidden;
     width: 100%;
@@ -1326,7 +1287,6 @@ html, body {
 }
 
 @media (max-width: 768px) {
-    /* 2. جعل الحاويات تأخذ العرض الكامل بدون هوامش خارجية تسبب فراغ */
     .container {
         width: 100% !important;
         max-width: 100vw !important;
@@ -1334,31 +1294,28 @@ html, body {
         box-sizing: border-box;
     }
 
-    /* 3. جعل منتجات المتجر تظهر (كل واحدة في صف) */
     .store-featured-cards, 
     .product-teaser-grid, 
     .products-grid {
         display: flex !important;
-        flex-direction: column !important; /* ترتيب رأسي */
+        flex-direction: column !important; 
         align-items: center !important;
         gap: 25px !important;
     }
 
     .teaser-card, 
     .product-card {
-        width: 100% !important; /* تأخذ عرض الشاشة */
-        max-width: 350px; /* لضمان عدم تمددها بشكل زائد في الشاشات العريضة قليلاً */
+        width: 100% !important; 
+        max-width: 350px;
         margin: 0 auto !important;
     }
 
-    /* 4. ضبط الصور داخل الكروت لتملأ المساحة */
     .teaser-card img, 
     .product-card img {
         width: 100%;
         height: auto;
     }
 
-    /* 5. ضبط أزرار الهيرو (Hero) لتكون تحت بعضها ومتناسقة */
     .cta-buttons {
         display: flex;
         flex-direction: column;
@@ -1372,7 +1329,6 @@ html, body {
         margin: 5px 0 !important;
     }
 
-    /* 6. إخفاء أي مساحات إضافية في الهيدر */
     .main-header .container {
         justify-content: space-between;
     }
@@ -1392,7 +1348,6 @@ html, body {
 @media (max-width: 768px) {
     .container { width: 90%; }
 
-    /* 1. تحويل كل شيء لترتيب رأسي ومتوسط */
     .services.container,
     .gallery-grid-pro,
     .products-grid,
@@ -1402,31 +1357,29 @@ html, body {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
-        grid-template-columns: 1fr !important; /* لضمان كسر الجريد */
+        grid-template-columns: 1fr !important;
         gap: 20px !important;
     }
 
-    /* 2. ضبط الصور في الموبايل (حل مشكلة المطة والتوسيط) */
     .gallery-item, .pro-card, .teaser-card {
         width: 100%;
-        max-width: 350px; /* لضمان شكل أنيق */
+        max-width: 350px; 
     }
 
     .gallery-item img, 
     .pro-card img, 
     .teaser-card img {
-        height: 250px !important; /* تقليل الارتفاع للموبايل */
+        height: 250px !important;
         width: 100% !important;
     }
         .payment-logos img {
         height: 40px !important;
     }
 
-    /* 3. إصلاح صندوق خدمات الترميم (المساحة الزرقاء) */
     .about-service-box {
         padding: 25px;
         border-right: none;
-        border-top: 6px solid var(--primary-blue); /* نقل الخط للأعلى */
+        border-top: 6px solid var(--primary-blue);
         text-align: center;
     }
 
@@ -1435,7 +1388,6 @@ html, body {
         padding: 0;
     }
 
-    /* 4. المتجر في الموبايل */
     .store-sidebar {
         width: 100%;
         position: static;
@@ -1449,17 +1401,14 @@ html, body {
         gap: 10px;
     }
 
-    /* 5. التواصل المباشر */
     .contact-sidebar, .contact-form-area {
         padding: 30px 20px;
         text-align: center;
     }
     .contact-method { justify-content: center; }
 
-    /* 6. الهيرو (الواجهة) */
     .hero-content h2 { font-size: 24px !important; }
 }
-/* --- أيقونة اللغة الجديدة --- */
 .header-actions {
     display: flex;
     align-items: center;
@@ -1485,18 +1434,15 @@ html, body {
     color: #000;
 }
 
-/* --- الأزرار العائمة (Floating Buttons) --- */
 .floating-actions {
     position: fixed;
     bottom: 30px;
-    right: 20px; /* في العربي يظهر يمين */
+    right: 20px; 
     display: flex;
     flex-direction: column;
     gap: 15px;
     z-index: 9999;
 }
-
-/* عكس الاتجاه في الإنجليزي ليكون على اليسار */
 [lang="en"] .floating-actions {
     right: auto;
     left: 20px;
@@ -1523,27 +1469,23 @@ html, body {
     transform: scale(1.1);
 }
 
-/* حذف شريط الاتصال الأسود */
 .top-bar { display: none; }
 
-/* حاوية الأزرار العائمة */
 .floating-actions {
     position: fixed;
     bottom: 30px;
-    right: 30px; /* تظهر جهة اليمين في المتصفح العربي */
+    right: 30px; 
     display: flex;
-    flex-direction: column; /* ترتيب رأسي */
-    gap: 15px; /* مسافة بين الأزرار */
+    flex-direction: column; 
+    gap: 15px; 
     z-index: 9999;
 }
 
-/* تبديل مكان الأزرار في حال كان الموقع إنجليزي */
 [lang="en"] .floating-actions {
     right: auto;
     left: 30px;
 }
 
-/* التنسيق العام للأزرار العائمة */
 .float-btn {
     width: 60px;
     height: 60px;
@@ -1560,7 +1502,6 @@ html, body {
     border: none;
 }
 
-/* زر اللغة (لون مميز) */
 .lang-float {
     background-color: #ff9d2a;
     font-weight: bold;
@@ -1571,20 +1512,16 @@ html, body {
     margin-bottom: 2px;
 }
 
-/* زر الواتساب */
 .float-btn.whatsapp { background-color: #25d366; font-size: 28px; }
 
-/* زر الاتصال */
 .float-btn.phone {     background-color: var(--primary-blue);
  font-size: 22px; }
 
-/* تأثير عند مرور الماوس */
 .float-btn:hover {
     transform: scale(1.1);
     box-shadow: 0 12px 30px rgba(0,0,0,0.3);
 }
 
-/* تعديل للهواتف (تصغير الحجم قليلاً) */
 @media (max-width: 768px) {
     .floating-actions {
         bottom: 20px;
@@ -1596,7 +1533,6 @@ html, body {
         height: 50px;
     }
 }
-/* --- 1. أنيميشن النبض (Pulse) للأزرار --- */
 @keyframes pulse-blue {
     0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 118, 255, 0.7); }
     70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(0, 118, 255, 0); }
@@ -1609,25 +1545,21 @@ html, body {
     100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
 }
 
-/* تطبيق النبض على أزرار الهيرو */
 .btn-blue {
-    animation: pulse-blue 2s infinite; /* نبض مستمر */
+    animation: pulse-blue 2s infinite;
 }
 
-/* تطبيق النبض على زر الواتساب العائم */
 .float-btn.whatsapp {
     animation: pulse-green 2s infinite;
 }
 
-/* --- 2. أنيميشن الظهور عند التمرير (Reveal) --- */
 .reveal {
     opacity: 0;
-    transform: translateY(30px); /* قللنا المسافة عشان ميبانش إنه "نط" */
+    transform: translateY(30px); 
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    visibility: hidden; /* عشان مياخدش مساحة وهو مختفي */
+    visibility: hidden;
 }
 
-/* الحالة بعد التفعيل (يظهر ويرجع مكانه) */
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
@@ -1635,7 +1567,6 @@ html, body {
 }
 
 
-/* تحسين شكل النصوص في الهيرو لتبدو فخمة */
 .hero-content h2 {
     font-size: 3rem !important;
     text-shadow: 2px 4px 10px rgba(0,0,0,0.3);
@@ -1646,7 +1577,6 @@ html, body {
     from { opacity: 0; transform: translateY(-30px); }
     to { opacity: 1; transform: translateY(0); }
 }
-/* --- تنسيق القائمة المنسدلة (Dropdown) --- */
 .nav-links li { position: relative; }
 .dropdown-menu {
     position: absolute;
@@ -1657,7 +1587,7 @@ html, body {
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     border-radius: 10px;
     padding: 10px 0;
-    display: none; /* مخفية */
+    display: none;
     list-style: none;
     z-index: 2000;
 }
@@ -1671,7 +1601,6 @@ html, body {
 }
 .dropdown-menu li a:hover { background: #f0f7ff; color: var(--primary-blue); }
 
-/* --- تنسيق شبكة الخدمات في الرئيسية --- */
 .services-overview-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1692,22 +1621,19 @@ html, body {
 .s-card h3 { font-size: 18px; margin-bottom: 15px; }
 .read-more { text-decoration: none; color: var(--primary-blue); font-weight: bold; font-size: 14px; }
 
-/* الموبايل */
 @media (max-width: 768px) {
     .services-overview-grid { grid-template-columns: 1fr; }
     .dropdown-menu { position: static; width: 100%; box-shadow: none; display: block; padding-right: 20px; }
 }
-/* تنسيق الاسم القانوني في الهيدر */
 .legal-name {
     display: block;
-    font-size: 11px; /* خط صغير ورسمي */
+    font-size: 11px; 
     color: #666;
     margin-top: 2px;
     font-weight: 400;
     white-space: nowrap;
 }
 
-/* تنسيق الفوتر القانوني */
 .legal-footer {
     border-top: 1px solid #222;
     padding-top: 20px;
@@ -1717,27 +1643,24 @@ html, body {
 .legal-footer strong {
     color: var(--primary-blue);
 }
-/* تنسيق روابط التواصل في الجانب الأزرق */
 .contact-link-wrapper {
-    text-decoration: none; /* حذف الخط اللي تحت الرابط */
-    color: inherit; /* جعل الرابط يأخذ نفس لون النص الأبيض */
+    text-decoration: none; 
+    color: inherit; 
     display: block;
     transition: transform 0.3s ease;
 }
 
 .contact-link-wrapper:hover {
-    transform: translateX(-5px); /* حركة بسيطة عند الوقوف بالماوس */
+    transform: translateX(-5px);
 }
 
-/* في حالة اللغة الإنجليزية نعكس الحركة */
 [lang="en"] .contact-link-wrapper:hover {
     transform: translateX(5px);
 }
 
 .contact-method {
-    cursor: pointer; /* جعل الماوس يتحول ليد عند الوقوف */
+    cursor: pointer; 
 }
-/* تنسيق السوشيال ميديا في الفوتر */
 .footer-social {
     margin-top: 20px;
     display: flex;
@@ -1756,7 +1679,6 @@ html, body {
     transform: translateY(-5px);
 }
 
-/* تنسيق السوشيال ميديا في كارت التواصل */
 .social-contact-box {
     margin-top: 30px;
     padding-top: 20px;

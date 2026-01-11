@@ -1737,3 +1737,58 @@ html, body {
 .contact-method {
     cursor: pointer; /* جعل الماوس يتحول ليد عند الوقوف */
 }
+/* تنسيق السوشيال ميديا في الفوتر */
+.footer-social {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-social a {
+    color: #fff;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: var(--primary-blue);
+    transform: translateY(-5px);
+}
+
+/* تنسيق السوشيال ميديا في كارت التواصل */
+.social-contact-box {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.social-contact-box p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.social-icons-row {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons-row a {
+    color: #fff;
+    background: rgba(255,255,255,0.1);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons-row a:hover {
+    background: #fff;
+    color: var(--primary-blue);
+    transform: scale(1.1);
+}

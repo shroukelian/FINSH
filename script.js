@@ -93,3 +93,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 100);
 
 });
+// تأكد أن هذا الكود خارج قوس الـ DOMContentLoaded
+function orderViaWhatsApp(productName) {
+    const phoneNumber = "966565356905"; // رقم الواتساب الخاص بك
+    const message = `السلام عليكم، أريد الاستفسار عن منتج: (${productName})`;
+    
+    // تحويل النص لصيغة روابط الويب
+    const encodedMessage = encodeURIComponent(message);
+    
+    // فتح رابط الواتساب في صفحة جديدة
+    window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
+}

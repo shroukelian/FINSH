@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 // تأكد أن هذا الكود خارج قوس الـ DOMContentLoaded
 function orderViaWhatsApp(productName) {
-    const phoneNumber = "966565356905"; // رقم الواتساب الخاص بك
+    const phoneNumber = "966544028428"; // رقم الواتساب الخاص بك
     const message = `السلام عليكم، أريد الاستفسار عن منتج: (${productName})`;
     
     // تحويل النص لصيغة روابط الويب
